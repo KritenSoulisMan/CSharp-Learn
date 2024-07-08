@@ -434,14 +434,16 @@ class Months_Learn
         // Day 3
         // Теперь вместо повторения пактик я пишу код под 1 тему несколько разных задач меняя текст или кол-во строк для одной программы.
         // так же будет касаться и других дней, для лучшего запоминания кода и разработки своей логики.
-        Console.WriteLine("Ваше число: ");
+        
+        /*
+        Console.Write("Ваше число: ");
         int a = int.Parse(Console.ReadLine());
 
         if (a > 0) Console.WriteLine("Ваше число положительное.");
         else if (a == 0) Console.WriteLine("Это ноль.");
         else Console.WriteLine("Ваше число отрицательное.")
 
-        Console.WriteLine("Ваше число: ");
+        Console.Write("Ваша оценка: ");
         int b = int.Parse(Console.ReadLine());
 
         if (b > 80) Console.WriteLine("Ваша оценка отличная.");
@@ -449,13 +451,82 @@ class Months_Learn
         else if (b > 30) Console.WriteLine("Ваша оценка средняя.");
         else Console.WriteLine("Ваша оценка плохая.");
 
-        Console.WriteLine("Ваше число: ");
+        Console.Write("Ваше число: ");
         int с = int.Parse(Console.ReadLine());
-        Console.WriteLine("Степень вашего числа: ");
+        Console.Write("Степень вашего числа: ");
         int d = int.Parse(Console.ReadLine());
 
         if (c < 0) Console.WriteLine("Программа не умеет считать отрицательные числа.");
         else if (d < 0) Console.WriteLine("Программа не умеет считать отрицательные степени чисел.");
         else cd = c ** d; Console.WriteLine("Ответ: " +  cd);
+        */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // Day 4
+        // for - это цикл с обозначением счётчика, условия срабатывания и процесс цикла, а дальше функция для использования заданных перменных в цикле.
+        // for (int i = 0; i < 10; i++) Console.WriteLine(i);
+
+        // int i = 0;
+        // while - цикл с 1 условием и телом цикла.
+        // while (i < 10) Console.WriteLine(i); i++;
+        
+        // int i = 0;
+        // do while - Цикл который вначале выполняется, а после сравнивает условие для последующего выполнения.
+        // do {Console.WriteLine(i); i++;} while (i < 10)
+
+
+        // Подготовка к практике:
+        /*
+        for (int i = 0; i < 10; i++)
+        {
+            if (i == 5) 
+            {
+                break; // Прерывание цикла.
+            }
+            Console.WriteLine(i);
+        }
+
+        for (int i = 0; i < 10; i++)
+        {
+            if (i == 5) 
+            {
+                continue; // Переход к следующему шагу.
+            }
+            Console.WriteLine(i);
+        }
+        */
+
+        
+        // for (int i = 0; i < 101; i++) Console.WriteLine(i);
+
+        /*
+        Console.Write("Напишите число: ");
+        int a int.Parse(Console.ReadLine());
+        for (int i = 1; i < 11; i++) Console.WriteLine(i + " * " + a);
+        */
+        
     }
 }
