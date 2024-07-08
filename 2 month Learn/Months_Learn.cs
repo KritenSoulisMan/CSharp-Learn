@@ -2,7 +2,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 
-class First_Day
+class Months_Learn
 {
     static void Main()
     {
@@ -431,6 +431,31 @@ class First_Day
 
 
 
-        // Day 3 soon... 
+        // Day 3
+        // Теперь вместо повторения пактик я пишу код под 1 тему несколько разных задач меняя текст или кол-во строк для одной программы.
+        // так же будет касаться и других дней, для лучшего запоминания кода и разработки своей логики.
+        Console.WriteLine("Ваше число: ");
+        int a = int.Parse(Console.ReadLine());
+
+        if (a > 0) Console.WriteLine("Ваше число положительное.");
+        else if (a == 0) Console.WriteLine("Это ноль.");
+        else Console.WriteLine("Ваше число отрицательное.")
+
+        Console.WriteLine("Ваше число: ");
+        int b = int.Parse(Console.ReadLine());
+
+        if (b > 80) Console.WriteLine("Ваша оценка отличная.");
+        else if (b > 50) Console.WriteLine("Ваша оценка хорошая.");
+        else if (b > 30) Console.WriteLine("Ваша оценка средняя.");
+        else Console.WriteLine("Ваша оценка плохая.");
+
+        Console.WriteLine("Ваше число: ");
+        int с = int.Parse(Console.ReadLine());
+        Console.WriteLine("Степень вашего числа: ");
+        int d = int.Parse(Console.ReadLine());
+
+        if (c < 0) Console.WriteLine("Программа не умеет считать отрицательные числа.");
+        else if (d < 0) Console.WriteLine("Программа не умеет считать отрицательные степени чисел.");
+        else cd = c ** d; Console.WriteLine("Ответ: " +  cd);
     }
 }
