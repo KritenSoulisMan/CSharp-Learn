@@ -498,6 +498,9 @@ class Months_Learn
         // do {Console.WriteLine(i); i++;} while (i < 10)
 
 
+
+
+
         // Подготовка к практике:
         /*
         for (int i = 0; i < 10; i++)
@@ -519,7 +522,6 @@ class Months_Learn
         }
         */
 
-        
         // for (int i = 0; i < 101; i++) Console.WriteLine(i);
 
         /*
@@ -527,6 +529,11 @@ class Months_Learn
         int a int.Parse(Console.ReadLine());
         for (int i = 1; i < 11; i++) Console.WriteLine(i + " * " + a);
         */
+        
+
+        int a = 0;
+        do {Console.WriteLine(a);} while (a <= 100) 
+
         
     }
 }
