@@ -530,10 +530,33 @@ class Months_Learn
         for (int i = 1; i < 11; i++) Console.WriteLine(i + " * " + a);
         */
         
+        // int a = 0;
+        // while (a < 101) Console.WriteLine(a);
+        // do {Console.WriteLine(i + " * " + a); i++;} while (i <= 10)
 
-        int a = 0;
-        do {Console.WriteLine(a);} while (a <= 100) 
-
+        // Практика:
+        /*
+        for (int i = 0; i < 11; i++)
+        {
+            Console.WriteLine(i);
+            if (i == 5)
+            {
+                break;
+            }
+        }
+        */
         
+        /*
+        for (int i = 0; i < 11; i++)
+        {
+            if (i % 2 == 0)
+            {
+                Console.WriteLine(i);
+            }
+        }
+        */
+
+        // 5 Day
+        // Soon...
     }
 }
