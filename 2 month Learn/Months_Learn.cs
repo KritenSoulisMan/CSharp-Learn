@@ -433,7 +433,7 @@ class Months_Learn
 
         // Day 3
         // Теперь вместо повторения пактик я пишу код под 1 тему несколько разных задач меняя текст или кол-во строк для одной программы.
-        // так же будет касаться и других дней, для лучшего запоминания кода и разработки своей логики.
+        // Это касается последующих дней, для лучшего запоминания кода и разработки своей логики.
         
         /*
         Console.Write("Ваше число: ");
@@ -534,6 +534,10 @@ class Months_Learn
         // while (a < 101) Console.WriteLine(a);
         // do {Console.WriteLine(i + " * " + a); i++;} while (i <= 10)
 
+
+
+
+
         // Практика:
         /*
         for (int i = 0; i < 11; i++)
@@ -556,7 +560,113 @@ class Months_Learn
         }
         */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         // 5 Day
-        // Soon...
+        // 
+        // Сильно опаздываю по выкладыванию кода, но по прежнему в свободное время делаю всё что мог бы сделать за прошлые дни...
+        // Если кто заглянет сюда, можете свои задачи кидать мне в телеграмм: seqjo
+        // 
+        // Вызов функции запускает её код.
+        /*
+        void PrintMessage()
+        {
+            Console.WriteLine("Hi");
+        }
+
+        PrintMessage();
+        */
+
+
+
+
+
+        // Подготовка к практике:
+        /*
+        void PrintNumber()
+        {
+            Number = 9;
+            Console.WriteLine(number);
+        }
+
+        PrintNumber();
+
+        int AddNumber(int a, int b)
+        {
+            return a + b;
+        }
+
+        int result = AddNumber(1, 2);
+        Console.WriteLine(result);
+
+        int Add(int a, int b)
+        {
+            return a + b;
+        }
+        
+        Console.WriteLine(Add(1, 15));
+        
+        double Add(double a, double b)
+        {
+            return a + b;
+        }
+
+        Console.WriteLine(Add(1.12, 1.817));
+
+        void PrintNumbers(params int[] numbers)
+        {
+            foreach (int number in numbers)
+            {
+                Console.WriteLine(number);
+            }
+        }
+
+        PrintNumbers(1, 2, 3, 4, 5, 6); // Передаём массив.
+
+        void OuterFunction() // Вызов функции внутри которой есть функция, которая больше нигде не используется.
+        {
+            void InnerFunction()
+            {
+                Console.WriteLine("Почему я ни где не используюсь?");
+            }
+
+            InnerFunction(); // Вызов вспомогательной функции.
+        }
+
+        OuterFunction(); // Вызов первой функции.
+
+        void Multiply()
+        {
+            int func(int a, int b) {return a * b;}
+            Console.WriteLine(func(1, 2));
+
+            double func(double a, double b) {return a * b;}
+            Console.WriteLine(func(1.12, 1.817));
+        }
+
+        Multiply();
+        */
     }
 }
