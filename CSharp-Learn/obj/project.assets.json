@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Program Data\\Flashka\\CSharp-Learn\\CSharp-Learn.csproj",
+      "projectUniqueName": "C:\\Users\\rmatv\\OneDrive\\Dokumente\\GitHub\\CSharp-Learn\\CSharp-Learn\\CSharp-Learn.csproj",
       "projectName": "CSharp-Learn",
-      "projectPath": "D:\\Program Data\\Flashka\\CSharp-Learn\\CSharp-Learn.csproj",
+      "projectPath": "C:\\Users\\rmatv\\OneDrive\\Dokumente\\GitHub\\CSharp-Learn\\CSharp-Learn\\CSharp-Learn.csproj",
       "packagesPath": "C:\\Users\\rmatv\\.nuget\\packages\\",
-      "outputPath": "D:\\Program Data\\Flashka\\CSharp-Learn\\obj\\",
+      "outputPath": "C:\\Users\\rmatv\\OneDrive\\Dokumente\\GitHub\\CSharp-Learn\\CSharp-Learn\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rmatv\\AppData\\Roaming\\NuGet\\NuGet.Config",

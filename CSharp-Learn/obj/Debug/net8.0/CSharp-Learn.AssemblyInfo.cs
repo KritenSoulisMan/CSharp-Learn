@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CSharp-Learn")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78ab025aff785dc4ccd35ac079162fab704e0b52")]
 [assembly: System.Reflection.AssemblyProductAttribute("CSharp-Learn")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CSharp-Learn")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

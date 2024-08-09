@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Program Data\\Flashka\\",
+  "WorkspaceRootPath": "C:\\Users\\rmatv\\OneDrive\\Dokumente\\GitHub\\CSharp-Learn\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CE387C9B-E975-41EC-BE14-69FE6961DAFF}|CSharp-Learn\\CSharp-Learn.csproj|d:\\program data\\flashka\\csharp-learn\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CE387C9B-E975-41EC-BE14-69FE6961DAFF}|CSharp-Learn\\CSharp-Learn.csproj|c:\\users\\rmatv\\onedrive\\dokumente\\github\\csharp-learn\\csharp-learn\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE387C9B-E975-41EC-BE14-69FE6961DAFF}|CSharp-Learn\\CSharp-Learn.csproj|solutionrelative:csharp-learn\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Program Data\\Flashka\\CSharp-Learn\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\rmatv\\OneDrive\\Dokumente\\GitHub\\CSharp-Learn\\CSharp-Learn\\Program.cs",
               "RelativeDocumentMoniker": "CSharp-Learn\\Program.cs",
-              "ToolTip": "D:\\Program Data\\Flashka\\CSharp-Learn\\Program.cs",
+              "ToolTip": "C:\\Users\\rmatv\\OneDrive\\Dokumente\\GitHub\\CSharp-Learn\\CSharp-Learn\\Program.cs",
               "RelativeToolTip": "CSharp-Learn\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAEkDAAAAAAAAAAAgwEwDAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-09T23:03:15.723Z",
               "EditorCaption": ""
