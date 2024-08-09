@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
+using System.Security.Cryptography.X509Certificates;
 
 class Months_Learn
 {
     static void Main()
     {
+
         // 1 Day
 
         /* Переменные
@@ -434,7 +436,7 @@ class Months_Learn
         // Day 3
         // Теперь вместо повторения пактик я пишу код под 1 тему несколько разных задач меняя текст или кол-во строк для одной программы.
         // Это касается последующих дней, для лучшего запоминания кода и разработки своей логики.
-        
+
         /*
         Console.Write("Ваше число: ");
         int a = int.Parse(Console.ReadLine());
@@ -492,7 +494,7 @@ class Months_Learn
         // int i = 0;
         // while - цикл с 1 условием и телом цикла.
         // while (i < 10) Console.WriteLine(i); i++;
-        
+
         // int i = 0;
         // do while - Цикл который вначале выполняется, а после сравнивает условие для последующего выполнения.
         // do {Console.WriteLine(i); i++;} while (i < 10)
@@ -526,10 +528,10 @@ class Months_Learn
 
         /*
         Console.Write("Напишите число: ");
-        int a int.Parse(Console.ReadLine());
+        int a = int.Parse(Console.ReadLine());
         for (int i = 1; i < 11; i++) Console.WriteLine(i + " * " + a);
         */
-        
+
         // int a = 0;
         // while (a < 101) Console.WriteLine(a);
         // do {Console.WriteLine(i + " * " + a); i++;} while (i <= 10)
@@ -549,7 +551,7 @@ class Months_Learn
             }
         }
         */
-        
+
         /*
         for (int i = 0; i < 11; i++)
         {
@@ -602,12 +604,11 @@ class Months_Learn
 
 
 
-
-        // Подготовка к практике:
         /*
+        // Подготовка к практике:
         void PrintNumber()
         {
-            Number = 9;
+            int number = 9;
             Console.WriteLine(number);
         }
 
@@ -667,6 +668,655 @@ class Months_Learn
         }
 
         Multiply();
+
         */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // 6 Day - Массивы...
+        /**/
+        // 1.Одномерные массивы
+        Console.WriteLine("1.Одномерные массивы.");
+        int[] numbers = new int[5]; // Объявление массива с 5 элементами
+        numbers[0] = 1;
+        numbers[1] = 2;
+        numbers[2] = 3;
+        numbers[3] = 4;
+        numbers[4] = 5;
+
+        // Альтернативный способ инициализации
+        int[] numbers1 = { 1, 2, 3, 4, 5 };
+        Console.WriteLine();
+
+
+
+
+
+        // 2.Перебор массива с использованием цикла for
+        Console.WriteLine("2.Перебор массива с использованием цикла for.");
+        int[] nn = { 1, 2, 3, 4, 5 }; // nn.Length - длина массива nn
+        for (int i = 0; i < nn.Length; i++) Console.WriteLine(nn[i]); // Вывод каждого числа из массива nn.
+
+
+
+
+
+
+        // 3.Многомерные массивы
+        Console.WriteLine("3.Многомерные массивы.");
+        // int[,] запятая 
+        int[,] matrix = new int[3, 3]; // Объявление двумерного массива 3x3
+        matrix[0, 0] = 1; // Двумерный массив под номером 1 0х0
+        matrix[0, 1] = 2; // Двумерный массив под номером 2 0х1
+        matrix[0, 2] = 3; // Двумерный массив под номером 3 0х2 и т.д.
+        matrix[1, 0] = 4;
+        matrix[1, 1] = 5;
+        matrix[1, 2] = 6;
+        matrix[2, 0] = 7;
+        matrix[2, 1] = 8;
+        matrix[2, 2] = 9;
+
+        // Альтернативный способ инициализации
+        int[,] otherMatrix = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+        Console.WriteLine();
+
+
+
+
+
+
+        // 4.Перебор многомерного массива
+        Console.WriteLine("4.Перебор многомерного массива.");
+
+        int[,] matrixs = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+
+        for (int i = 0; i < matrixs.GetLength(0); i++)
+        {
+            for (int j = 0; j < matrixs.GetLength(1); j++)
+            {
+                Console.WriteLine(matrixs[i, j]);
+            }
+        }
+
+
+
+
+
+
+        // 5.Основные операции над массивами
+        Console.WriteLine("5.Основные операции над массивами.");
+
+        int[] ns = { 5, 2, 8, 1, 3 };
+
+        // Копирование массива
+        int[] copy = new int[ns.Length];
+        Array.Copy(ns, copy, ns.Length);
+
+        // Сортировка массива
+        Array.Sort(ns);
+
+        // Поиск элемента в массиве
+        int index = Array.IndexOf(ns, 8);
+        Console.WriteLine("Index of 8: " + index);
+
+
+
+
+
+
+        // Задача 1: Напишите программу, которая запрашивает у пользователя два целых числа и выводит их сумму, разность, произведение и частное.
+        Console.WriteLine("Напишите 1-е число: ");
+        int a = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Напишите 2-е число: ");
+        int b = int.Parse(Console.ReadLine());
+
+
+        Console.WriteLine("Напишите арифметический знак: ");
+        string c = Console.ReadLine();
+        switch (c)
+        {
+            case "-":
+                int dum = a - b;
+                Console.WriteLine(dum);
+                break;
+
+            case "+":
+                int sum = a + b;
+                Console.WriteLine(sum);
+                break;
+
+            case "*":
+                int umn = a * b;
+                Console.WriteLine(umn);
+                break;
+
+            case "/":
+                int del = a / b;
+                Console.WriteLine(del);
+                break;
+        }
+
+
+
+
+
+
+        // Задача 2: Напишите программу, которая запрашивает у пользователя его возраст и выводит сообщение с указанием, является ли он совершеннолетним.
+        Console.WriteLine("Напишите свой возраст: ");
+        int age = int.Parse(Console.ReadLine());
+
+        if (age < 0) Console.WriteLine("Неверный возраст!");
+        else if (age < 18) if (age > 0) Console.WriteLine("Вы ещё не совершено-летний человек.");
+        else Console.WriteLine("Вы совершено-летний!");
+
+
+
+
+
+
+        // Задача 3: Напишите программу, которая запрашивает у пользователя число и определяет, является ли оно четным или нечетным.
+        Console.WriteLine("Напишите число: ");
+        int numc = int.Parse(Console.ReadLine());
+
+        if (numc % 2 == 0) Console.WriteLine("Число четное!");
+        else Console.WriteLine("Число нечетное!");
+
+
+
+
+
+
+        // Задача 4: Напишите программу, которая определяет, является ли введенное пользователем число положительным, отрицательным или нулем.
+        Console.WriteLine("Напишите число: ");
+        int chislo = int.Parse(Console.ReadLine());
+
+        if (chislo == 0) Console.WriteLine("Число является нулём.");
+        if (chislo > 0) Console.WriteLine("Число положительное.");
+        else Console.WriteLine("Число отрицательное.");
+
+
+
+
+
+
+        // Задача 5: Напишите программу, которая выводит все числа от 1 до 100, которые делятся на 3.
+        for (int i = 0; i <= 100; i++) if (i % 3 == 0) Console.WriteLine(i);
+
+
+
+
+
+
+        // Задача 6: Напишите программу, которая запрашивает у пользователя 5 чисел и выводит их среднее значение.
+        Console.WriteLine("Напишите каждое число отдельно, используйте для разделения Enter.");
+        int ac = int.Parse(Console.ReadLine());
+        int bc = int.Parse(Console.ReadLine());
+        int cc = int.Parse(Console.ReadLine());
+        int ec = int.Parse(Console.ReadLine());
+        int fc = int.Parse(Console.ReadLine());
+
+        int umnc = (ac + bc + cc + ec + fc) / 5;
+        Console.WriteLine(umnc);
+
+
+
+
+
+
+        // Задача 7: Напишите функцию, которая принимает строку и возвращает ее длину.
+
+        // Задача 8: Напишите программу, которая запрашивает у пользователя 10 чисел и сохраняет их в массиве. Затем программа должна найти и вывести наибольшее и наименьшее число в массиве.
+
+        // Задача 9: Напишите программу, которая создает двумерный массив 5x5 и заполняет его случайными числами. Затем программа должна найти и вывести сумму всех элементов массива.
+
+        // Задача 10: Напишите программу, которая запрашивает у пользователя количество студентов в классе, а затем запрашивает оценки каждого студента. Программа должна вывести среднюю оценку класса.
+
+        // Задача 11: Напишите программу, которая создает двумерный массив и выводит его в виде таблицы, затем находит и выводит сумму элементов каждой строки и каждого столбца.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // Пример: 
+        for (int w = 1; w < 10; w++) for (int j = 1; j < 10; j++) Console.Write($"{w * j} \t");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
