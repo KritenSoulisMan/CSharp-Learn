@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{CE387C9B-E975-41EC-BE14-69FE6961DAFF}|CSharp-Learn\\CSharp-Learn.csproj|c:\\users\\rmatv\\onedrive\\dokumente\\github\\csharp-learn\\csharp-learn\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE387C9B-E975-41EC-BE14-69FE6961DAFF}|CSharp-Learn\\CSharp-Learn.csproj|solutionrelative:csharp-learn\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE387C9B-E975-41EC-BE14-69FE6961DAFF}|CSharp-Learn\\CSharp-Learn.csproj|c:\\users\\rmatv\\onedrive\\dokumente\\github\\csharp-learn\\csharp-learn\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE387C9B-E975-41EC-BE14-69FE6961DAFF}|CSharp-Learn\\CSharp-Learn.csproj|solutionrelative:csharp-learn\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "test.cs",
+              "DocumentMoniker": "C:\\Users\\rmatv\\OneDrive\\Dokumente\\GitHub\\CSharp-Learn\\CSharp-Learn\\test.cs",
+              "RelativeDocumentMoniker": "CSharp-Learn\\test.cs",
+              "ToolTip": "C:\\Users\\rmatv\\OneDrive\\Dokumente\\GitHub\\CSharp-Learn\\CSharp-Learn\\test.cs",
+              "RelativeToolTip": "CSharp-Learn\\test.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T09:35:24.796Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +41,7 @@
               "RelativeDocumentMoniker": "CSharp-Learn\\Program.cs",
               "ToolTip": "C:\\Users\\rmatv\\OneDrive\\Dokumente\\GitHub\\CSharp-Learn\\CSharp-Learn\\Program.cs",
               "RelativeToolTip": "CSharp-Learn\\Program.cs",
-              "ViewState": "AQIAAEkDAAAAAAAAAAAgwEwDAAAyAAAA",
+              "ViewState": "AQIAAJUDAAAAAAAAAAAcwKcDAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-09T23:03:15.723Z",
               "EditorCaption": ""
