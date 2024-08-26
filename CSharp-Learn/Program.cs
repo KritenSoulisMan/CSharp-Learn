@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
+using System.Reflection;
 using System.Security.Cryptography.X509Certificates;
+using System.Xml.Linq;
 
 class Months_Learn
 {
@@ -696,7 +698,7 @@ class Months_Learn
 
 
         // 6 Day - Массивы...
-        /**/
+        /*
         // 1.Одномерные массивы
         Console.WriteLine("1.Одномерные массивы.");
         int[] numbers = new int[5]; // Объявление массива с 5 элементами
@@ -708,7 +710,7 @@ class Months_Learn
 
         // Альтернативный способ инициализации
         int[] numbers1 = { 1, 2, 3, 4, 5 };
-        Console.WriteLine();
+        Console.WriteLine(numbers);
 
 
 
@@ -949,6 +951,7 @@ class Months_Learn
         
         
         // Задача 11: Напишите программу, которая создает двумерный массив и выводит его в виде таблицы, затем находит и выводит сумму элементов каждой строки и каждого столбца.
+        */
 
 
 
@@ -990,41 +993,146 @@ class Months_Learn
 
 
 
-        Console.WriteLine("Примеры работы других строк кода");
         // Пример: 
-        for (int w = 1; w < 10; w++) for (int j = 1; j < 10; j++) Console.Write($"{w * j} \t");
 
+        // Таблица умножения:
+        /*
+        for (int w = 1; w < 10; w++) 
+        {
+            for (int j = 1; j < 10; j++)
+            {
+                Console.Write($"{w * j} \t"); 
+            }
+        }
 
 
 
 
+        // Работа с массивом:
+        // Создание массива из 5 элементов
+        int[] nums = new int[5];
 
+        // Заполнение массива
+        nums[0] = 10;
+        nums[1] = 20;
+        nums[2] = 30;
+        nums[3] = 40;
+        nums[4] = 50;
 
+        int sum = 0;
+        // Вывод элементов массива
+        foreach (int num in nums)
+        {
+            sum =+ num;
+            Console.WriteLine(sum);
+        }
 
 
 
 
+        // Работа с списком:
+        List<int> numbers = new List<int> { 10, 20, 30, 40, 50 };
+
+        // Добавление нового элемента
+        numbers.Add(60);
 
+        // Удаление элемента
+        numbers.Remove(20);
 
+        // Поиск элемента
+        // Console.Write("Напишите искомую цыфру: ");
+        int a = 30; // Можно использовать int.Parse(Console.ReadLine)
+        if (numbers.Contains(a)) Console.WriteLine("Элемент найден");
 
+        // Доступ ко всем элементам
+        foreach (int number in numbers) Console.WriteLine(number);
+        */
 
 
 
 
+        /*
+        Dictionary<string, int> ages = new Dictionary<string, int>
+        {
+            { "Alice", 30 }, // { Ключ, значение }
+            { "Bob", 25 },
+            { "Charlie", 35 }
+        };
 
+        // Выводим возраст Alice
+        Console.WriteLine($"Alice's age: {ages["Alice"]}");
 
+        // Проверяем наличие ключа и выводим возраст Bob
+        if (ages.ContainsKey("Bob"))
+        {
+            Console.WriteLine($"Bob's age: {ages["Bob"]}");
+        }
 
+        // Удаляем элемент
+        ages.Remove("Charlie");
 
+        // Выводим все пары ключ-значение
+        foreach (var pair in ages)
+        {
+            // $ - используется для упращённого ввода переменных для вывода.
+            // Вместо более длинного варианта Console.WriteLine(pair.Key + ": " + {pair.Value});
+            Console.WriteLine($"{pair.Key}: {pair.Value}");
+        }
+        */
 
 
 
+        /*
+        List<int> nums = new List<int>();
 
+        nums.Add(1);
+        nums.Add(3);
+        nums.Add(5);
+        nums.Add(4);
+        nums.Add(2);
 
+        Console.WriteLine("До сортировки: ");
+        for (int i = 0; i < nums.Count; i++)
+        {
+            Console.WriteLine(nums[i]);
+        }
 
 
+        Console.WriteLine();
+        Console.WriteLine("После сортировки: ");
+        nums.Sort();
+        for (int i = 0; i < nums.Count; i++)
+        {
+            Console.WriteLine(nums[i]);
+        }
 
 
+        Console.WriteLine();
+        Console.WriteLine("Вывод конкретного числа: ");
+        int targget = 2;
+        if (nums.Contains(targget))
+            Console.WriteLine(targget);
+
+        Console.WriteLine();
+        Console.WriteLine("Поиск через цикл: ");
+        int index = -1;
+        for (int i = 0; i < nums.Count; i++)
+        {
+            if (nums[i] == targget)
+            {
+                index = i; 
+                break;
+            }
+        }
 
+        if (index == -1)
+        {
+            Console.WriteLine("Число не найдено!");
+        }
+        else
+        {
+            Console.WriteLine(targget);
+        }
 
 
 
@@ -1032,21 +1140,78 @@ class Months_Learn
 
 
 
+        Console.WriteLine();
+        Dictionary<string, int> ages = new Dictionary<string, int>
+        {
+            { "Юрий", 36 }, // { Ключ, значение }
+            { "Фома", 52 },
+            { "Тома", 19 }
+        };
+
+        string nameKey = "Юр"; 
+        bool found = false;
 
+        foreach (var pair in ages)
+        {
+            if (pair.Key.Contains(nameKey))
+            {
+                // $ - используется для упращённого ввода переменных для вывода.
+                // Вместо более длинного варианта Console.WriteLine(pair.Key + ": " + {pair.Value});
+                Console.WriteLine($"Имя: {pair.Key}. Возраст: {pair.Value}");
 
+                found = true;
+                break;
+            }
+        }
+        if (!found)
+        { 
+            Console.WriteLine($"Имя не найдено, с таким содержанием: '{nameKey}'"); 
+        }
 
+        Console.WriteLine();
+        // Выводим возраст Alice
+        Console.WriteLine($"Возраст Фомы: {ages["Фома"]}");
 
+        Console.WriteLine();
+        // Проверяем наличие ключа и выводим возраст Юрия
+        if (ages.ContainsKey("Юрий"))
+        {
+            Console.WriteLine($"Возраст Юрия: {ages["Юрий"]}");
+        }
 
+        Console.WriteLine();
+        // Удаляем элемент
+        ages.Remove("Фома");
 
+        // Выводим все пары ключ-значение
+        foreach (var pair in ages)
+        {
+            Console.WriteLine($"{pair.Key}: {pair.Value}");
+        }
 
 
 
 
 
 
+        // Надо сделать цикл для поиска и вывода нужного значения, которое находится в списке, и в словаре.
+        Console.WriteLine();
+        Dictionary<string, int> age = new Dictionary<string, int>
+        {
+            { "Андрей", 12 },
+            { "Егор", 17 }
+        };
 
+        if (age.ContainsKey("Андрей")) 
+            Console.WriteLine($"Возраст Андрея: {age["Андрей"]}");
 
+        Console.WriteLine();
+        List<int> numbers = new List<int> { 1, 2, 3, 4, 5 };
 
+        int a = 4;
+        if (numbers.Contains(a)) 
+            Console.WriteLine("Число найдено!");
+        */
 
 
 
@@ -1054,8 +1219,35 @@ class Months_Learn
 
 
 
+        // Создать новый словарь с несколькими элементами. (Имя возрост)
+        // Написать код, который выводит все ключи начинающиеся на букву 'Ю'.
+        // Поиск имён: Юра, Юрей, Юля.
+        /*
+        Dictionary<string, int> keyValuePairs = new Dictionary<string, int>
+        {
+            { "Наталья", 15 },
+            { "Юра", 15 },
+            { "Юля", 15 },
+            { "Ёрик", 15 },
+            { "Юрей", 15 }
+        };
 
+        string nameKey = "Ю";
+        // string nameKey = Console.ReadLine();
+        bool found = false;
 
+        foreach (var pair in keyValuePairs)
+        {
+            // Contains - Содержание символа в ключах.
+            // StartsWith - Начальный символ.
+            if (pair.Key.StartsWith(nameKey))
+            {
+                Console.WriteLine($"Имя: {pair.Key}. Возраст: {pair.Value}");
+                found = true;
+            }
+        }
+        if (!found)
+            Console.WriteLine($"Имя не найдено, с таким содержанием: '{nameKey}'");
 
 
 
@@ -1064,332 +1256,51 @@ class Months_Learn
 
 
 
+        // Создать список с цифрами.
+        // Написать код, который выведет все места на которых замечена '1'.
+        Console.WriteLine();
+        List<int> nums = new List<int>{ 1, 5, 5, 3, 1, 2, 3, 1 };
 
+        int target = 1;
+        found = false;
 
+        for (int i = 0; i < nums.Count; i++)
+        {
+            if (nums[i] == target)
+            {
+                Console.WriteLine($"Найдено число '1' на позициях '{i}'");
+                found = true;
+            }
+        }
+        */
 
 
 
 
 
 
+        List<Car> Cars = new List<Car>();
 
+        Car car = new Car();
 
+        car.Marka = "Lada (ВАЗ)";
+        car.Model = 21093;
+        car.EntryYear = 2002;
 
+        Cars.Add(car);
 
+        car.Greet();
 
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+class Car
+{
+    public string Marka { get; set; }
+    public int Model { get; set; }
+    public int EntryYear { get; set; }
+    public void Greet()
+    {
+        Console.WriteLine($"Марка машины: {Marka}. Модель: {Model}. Год выпуска: {EntryYear}.");
     }
 }
