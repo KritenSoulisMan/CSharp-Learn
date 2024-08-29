@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharp_Learn.Scripts.TaskesList;
+using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Reflection;
@@ -19,6 +20,9 @@ class Months_Learn
          * 
          */
 
+
+        TaskCar taskCar = new TaskCar();
+        taskCar.AddCar();
     }
 }
 

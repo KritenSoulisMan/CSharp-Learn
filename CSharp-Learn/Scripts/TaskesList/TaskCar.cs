@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,7 +9,7 @@ namespace CSharp_Learn.Scripts.TaskesList
 {
     class TaskCar
     {
-        public void ListCar()
+        public void AddCar()
         {
             List<Car> Cars = new List<Car>();
 
@@ -19,6 +20,13 @@ namespace CSharp_Learn.Scripts.TaskesList
             car.EntryYear = 2002;
 
             Cars.Add(car);
+
+            ShowInfo();
+        }
+
+        void ShowInfo()
+        {
+            Car car = new Car();
 
             car.Greet();
         }
