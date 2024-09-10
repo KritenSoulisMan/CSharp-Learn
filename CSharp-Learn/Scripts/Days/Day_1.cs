@@ -131,16 +131,10 @@ namespace CSharp_Learn.Scripts.Days
 
             for (int i = 1; i < 11; i++) // Задаём условия (int чему число равно; Минимум или максимум; Уменьшение или увеличение числа)
             {
-                Console.WriteLine(i + " * 1 = " + i * 1);
-                Console.WriteLine(i + " * 2 = " + i * 2);
-                Console.WriteLine(i + " * 3 = " + i * 3);
-                Console.WriteLine(i + " * 4 = " + i * 4);
-                Console.WriteLine(i + " * 5 = " + i * 5);
-                Console.WriteLine(i + " * 6 = " + i * 6);
-                Console.WriteLine(i + " * 7 = " + i * 7);
-                Console.WriteLine(i + " * 8 = " + i * 8);
-                Console.WriteLine(i + " * 9 = " + i * 9);
-                Console.WriteLine(i + " * 10 = " + i * 10);
+                for (int abc = 1; abc <= 10; abc++)
+                {
+                    Console.WriteLine($"{i} * {abc} = {i * abc}");
+                }
             }
 
 
@@ -159,37 +153,37 @@ namespace CSharp_Learn.Scripts.Days
             Console.Write("3-е число: ");
             int g = int.Parse(Console.ReadLine());
 
-            if (e < f) // 12
+            if (e < f)
             {
-                if (f < g) // 23
+                if (f < g)
                 {
                     Console.WriteLine("Это число наибольшее: " + c);
                 }
-                else if (g < e) // 31
+                else if (g < e)
                 {
                     Console.WriteLine("Это число наибольшее: " + f);
                 }
             }
 
-            else if (f < e) // 21
+            else if (f < e)
             {
-                if (f < g) // 23
+                if (f < g)
                 {
                     Console.WriteLine("Это число наибольшее: " + c);
                 }
-                else if (g < e) // 31
+                else if (g < e)
                 {
                     Console.WriteLine("Это число наибольшее: " + f);
                 }
             }
 
-            else if (e < g) // 13
+            else if (e < g)
             {
-                if (f < g) // 23
+                if (f < g)
                 {
                     Console.WriteLine("Это число наибольшее: " + c);
                 }
-                else if (f < e) // 21
+                else if (f < e)
                 {
                     Console.WriteLine("Это число наибольшее: " + f);
                 }

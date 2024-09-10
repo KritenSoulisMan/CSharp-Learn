@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\rmatv\\OneDrive\\Dokumente\\GitHub\\CSharp-Learn\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CE387C9B-E975-41EC-BE14-69FE6961DAFF}|CSharp-Learn\\CSharp-Learn.csproj|c:\\users\\rmatv\\onedrive\\dokumente\\github\\csharp-learn\\csharp-learn\\scripts\\taskeslist\\taskcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE387C9B-E975-41EC-BE14-69FE6961DAFF}|CSharp-Learn\\CSharp-Learn.csproj|solutionrelative:csharp-learn\\scripts\\taskeslist\\taskcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE387C9B-E975-41EC-BE14-69FE6961DAFF}|CSharp-Learn\\CSharp-Learn.csproj|c:\\users\\rmatv\\onedrive\\dokumente\\github\\csharp-learn\\csharp-learn\\scripts\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE387C9B-E975-41EC-BE14-69FE6961DAFF}|CSharp-Learn\\CSharp-Learn.csproj|solutionrelative:csharp-learn\\scripts\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CE387C9B-E975-41EC-BE14-69FE6961DAFF}|CSharp-Learn\\CSharp-Learn.csproj|c:\\users\\rmatv\\onedrive\\dokumente\\github\\csharp-learn\\csharp-learn\\scripts\\taskeslist\\massive-list-direction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE387C9B-E975-41EC-BE14-69FE6961DAFF}|CSharp-Learn\\CSharp-Learn.csproj|solutionrelative:csharp-learn\\scripts\\taskeslist\\massive-list-direction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,33 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\rmatv\\OneDrive\\Dokumente\\GitHub\\CSharp-Learn\\CSharp-Learn\\Scripts\\Program.cs",
-              "RelativeDocumentMoniker": "CSharp-Learn\\Scripts\\Program.cs",
-              "ToolTip": "C:\\Users\\rmatv\\OneDrive\\Dokumente\\GitHub\\CSharp-Learn\\CSharp-Learn\\Scripts\\Program.cs",
-              "RelativeToolTip": "CSharp-Learn\\Scripts\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T13:07:31.101Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TaskCar.cs",
-              "DocumentMoniker": "C:\\Users\\rmatv\\OneDrive\\Dokumente\\GitHub\\CSharp-Learn\\CSharp-Learn\\Scripts\\TaskesList\\TaskCar.cs",
-              "RelativeDocumentMoniker": "CSharp-Learn\\Scripts\\TaskesList\\TaskCar.cs",
-              "ToolTip": "C:\\Users\\rmatv\\OneDrive\\Dokumente\\GitHub\\CSharp-Learn\\CSharp-Learn\\Scripts\\TaskesList\\TaskCar.cs",
-              "RelativeToolTip": "CSharp-Learn\\Scripts\\TaskesList\\TaskCar.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAA1wBwAAAAMAAAAAAAAAA==",
+              "Title": "Massive-List-Direction.cs",
+              "DocumentMoniker": "C:\\Users\\rmatv\\OneDrive\\Dokumente\\GitHub\\CSharp-Learn\\CSharp-Learn\\Scripts\\TaskesList\\Massive-List-Direction.cs",
+              "RelativeDocumentMoniker": "CSharp-Learn\\Scripts\\TaskesList\\Massive-List-Direction.cs",
+              "ToolTip": "C:\\Users\\rmatv\\OneDrive\\Dokumente\\GitHub\\CSharp-Learn\\CSharp-Learn\\Scripts\\TaskesList\\Massive-List-Direction.cs",
+              "RelativeToolTip": "CSharp-Learn\\Scripts\\TaskesList\\Massive-List-Direction.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T09:21:48.962Z",
+              "WhenOpened": "2024-08-30T20:34:00.181Z",
               "EditorCaption": ""
             }
           ]

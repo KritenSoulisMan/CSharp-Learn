@@ -21,6 +21,8 @@ namespace CSharp_Learn.Scripts.TaskesList
             nums[3] = 40;
             nums[4] = 50;
 
+            //Console.WriteLine(nums[0]);
+
             int sum = 0;
             // Вывод элементов массива
             foreach (int num in nums)
@@ -32,13 +34,14 @@ namespace CSharp_Learn.Scripts.TaskesList
 
         public void List()
         {
-
-
             // Работа с списком:
             List<int> numbers = new List<int> { 10, 20, 30, 40, 50 };
 
             // Добавление нового элемента
             numbers.Add(60);
+
+            //int adc = int.Parse(Console.ReadLine());
+            //numbers.Add(adc);
 
             // Удаление элемента
             numbers.Remove(20);
@@ -75,14 +78,14 @@ namespace CSharp_Learn.Scripts.TaskesList
 
             Console.WriteLine("До сортировки: ");
             for (int i = 0; i < nums.Count; i++)
-            {
+            { // 1 3 5 4 2
                 Console.WriteLine(nums[i]);
             }
 
 
             Console.WriteLine();
             Console.WriteLine("После сортировки: ");
-            nums.Sort();
+            nums.Sort(); // 1 2 3 4 5
             for (int i = 0; i < nums.Count; i++)
             {
                 Console.WriteLine(nums[i]);
@@ -95,17 +98,21 @@ namespace CSharp_Learn.Scripts.TaskesList
             if (nums.Contains(targget))
                 Console.WriteLine(targget);
 
+
             Console.WriteLine();
             Console.WriteLine("Поиск через цикл: ");
             int index = -1;
+            //bool foundes = false;
             for (int i = 0; i < nums.Count; i++)
             {
                 if (nums[i] == targget)
                 {
+                    //foundes = true;
                     index = i;
                     break;
                 }
             }
+
 
             if (index == -1)
             {
@@ -163,6 +170,8 @@ namespace CSharp_Learn.Scripts.TaskesList
 
             // Удаляем элемент
             ages.Remove("Charlie");
+
+            //ages.Add("Приключение электроника", 57);
 
             // Выводим все пары ключ-значение
             foreach (var pair in ages)
